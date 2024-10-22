@@ -1,0 +1,234 @@
+:root {
+	--site--margin: clamp(1rem, 0.428rem + 2.86vw, 3rem);
+	--size--2rem: clamp(1.75rem, 1.678rem + 0.36vw, 2rem);
+	--size--2-5rem: clamp(2rem, 1.858rem + 0.71vw, 2.5rem);
+	--size--3rem: clamp(2.25rem, 2.036rem + 1.07vw, 3rem);
+	--size--3-5rem: clamp(2.375rem, 2.053rem + 1.61vw, 3.5rem);
+	--size--4rem: clamp(2.5rem, 2.072rem + 2.14vw, 4rem);
+	--size--4-5rem: clamp(2.75rem, 2.25rem + 2.5vw, 4.5rem);
+	--size--5rem: clamp(3rem, 2.428rem + 2.86vw, 5rem);
+	--size--5-5rem: clamp(3.25rem, 2.608rem + 3.21vw, 5.5rem);
+	--size--6rem: clamp(3.5rem, 2.786rem + 3.57vw, 6rem);
+	--size--6-5rem: clamp(3.75rem, 2.964rem + 3.93vw, 6.5rem);
+	--size--7rem: clamp(4rem, 3.142rem + 4.29vw, 7rem);
+	--size--7-5rem: clamp(4.25rem, 3.322rem + 4.64vw, 7.5rem);
+	--size--8rem: clamp(4.5rem, 3.5rem + 5vw, 8rem);
+	--size--8-5rem: clamp(4.75rem, 3.678rem + 5.36vw, 8.5rem);
+	--size--9rem: clamp(5rem, 3.858rem + 5.71vw, 9rem);
+	--size--9-5rem: clamp(5.25rem, 4.036rem + 6.07vw, 9.5rem);
+	--size--10rem: clamp(5.5rem, 4.214rem + 6.43vw, 10rem);
+	--size--11rem: clamp(5.75rem, 4.25rem + 7.5vw, 11rem);
+	--size--12rem: clamp(6rem, 4.286rem + 8.57vw, 12rem);
+	--size--13rem: clamp(6.5rem, 4.642rem + 9.29vw, 13rem);
+	--size--14rem: clamp(7rem, 5rem + 10vw, 14rem);
+	--size--15rem: clamp(7.5rem, 5.358rem + 10.71vw, 15rem);
+	--size--16rem: clamp(8rem, 5.714rem + 11.43vw, 16rem);
+	--display--font-size: clamp(4rem, 3.082rem + 4.59vw, 7.21rem);
+	--h1--font-size: clamp(3.18rem, 2.606rem + 2.87vw, 5.19rem);
+	--h2--font-size: clamp(2.52rem, 2.174rem + 1.73vw, 3.73rem);
+	--h3--font-size: clamp(2rem, 1.802rem + 0.99vw, 2.69rem);
+	--h4--font-size: clamp(1.59rem, 1.492rem + 0.49vw, 1.93rem);
+	--h5--font-size: clamp(1.26rem, 1.222rem + 0.19vw, 1.39rem);
+	--h6--font-size: clamp(1rem, 1rem + 0vw, 1rem);
+	--text-large--font-size: clamp(1.14rem, 1.106rem + 0.17vw, 1.26rem);
+	--text-main--font-size: clamp(1rem, 0.986rem + 0.07vw, 1.05rem);
+	--text-small--font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+	--section-space--large: clamp(7.23rem, 5.444rem + 8.93vw, 13.48rem);
+	--section-space--main: clamp(5.17rem, 4.062rem + 5.54vw, 9.05rem);
+	--section-space--small: clamp(3.69rem, 3.01rem + 3.4vw, 6.07rem);
+	--space--8: clamp(2.64rem, 2.228rem + 2.06vw, 4.08rem);
+	--space--7: clamp(1.88rem, 1.634rem + 1.23vw, 2.74rem);
+	--space--6: clamp(1.34rem, 1.198rem + 0.71vw, 1.84rem);
+	--space--5: clamp(0.96rem, 0.882rem + 0.39vw, 1.23rem);
+	--space--4: clamp(0.69rem, 0.65rem + 0.2vw, 0.83rem);
+	--space--3: clamp(0.49rem, 0.47rem + 0.1vw, 0.56rem);
+	--space--2: clamp(0.35rem, 0.344rem + 0.03vw, 0.37rem);
+	--space--1: clamp(0.25rem, 0.25rem + 0vw, 0.25rem);
+  	/* colors imported from coolors.co */
+	--jet: #363635ff;
+	--ebony: #595a4aff;
+	--green-yellow: #b0fe76ff;
+	--light-green: #81e979ff;
+	--cambridge-blue: #8fbb99ff;
+	/* site colors */
+	--color-main: var(--green-yellow);
+	--color-bkg: var(--jet);
+	/* fonts */
+	--headline-font: 'Satoshi', sans-serif;
+	--body-font: 'Erode', serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bkg);
+  color: var(--color-main);
+  font-family: var(--body-font);
+  font-size: var(--text-main--font-size);
+  margin: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+.text-style-heading {
+	font-family: var(--headline-font);
+}
+
+img{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
+	user-drag: none;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+	background-repeat: no-repeat;
+	background-size: cover;
+	shape-margin: .75rem;
+}
+
+/* Global Classes */
+.container {
+	margin-inline: auto;
+	max-width: 90rem;
+}
+
+.flex--sp-btwn {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.d-none { display:none; }
+
+button {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	font-family: inherit;
+	color: var(--color-main);
+}
+
+/* Header Styles */
+header {
+	padding: .75rem var(--site--margin);
+	background: var(--color-bkg);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	
+	.container { align-items: center; }
+	
+	ul {
+		margin: unset;
+		padding: unset;
+		
+		display: flex;
+		list-style: none;
+		column-gap: .5rem;
+		
+		* { color:inherit; }
+	}
+	
+	nav a {
+		text-decoration-color: transparent;
+		text-underline-offset: .125em;
+		text-decoration-thickness: .125em;
+		letter-spacing: .0625em;
+		display: block;
+		transition: 
+			text-decoration-color 200ms ease,
+			color 200ms ease;
+	}
+	
+	nav a:hover,
+	nav a:focus { 
+		color: white;
+		text-decoration-color: var(--color-main); 
+	}
+	
+	.nav-menu--btn {
+		display: none;
+		align-content: center;
+		
+		svg { display: block; }
+	}
+	
+	@media only screen and (max-width: 37.5em) {
+		.nav-menu--btn {
+			display: block;
+		}
+		nav ul {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			flex-direction: column;
+			background: var(--color-bkg);
+			width: 100%;
+			z-index: 10;
+		}
+		
+		.menu--active { display: flex; }
+		
+		nav li,
+		nav a {
+			width: 100%;
+		}
+		
+		nav li { border-top: .125rem solid var(--ebony); }
+		
+		nav a {
+			text-align: right;
+			padding: 1rem var(--site--margin);
+		}
+	}
+}
+
+.nav--avatar-link {
+	display: flex;
+	gap: .5rem;
+	color: inherit;
+	align-items: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .0625em;
+	font-family: var(--headline-font);
+	font-size: var(--text-main--font-size);
+	
+	img {
+		max-width: 2.5rem;
+		border-radius: 50%;
+	}
+}
