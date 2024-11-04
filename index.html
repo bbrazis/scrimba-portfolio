@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <link href="https://api.fontshare.com/v2/css?f[]=erode@400&f[]=satoshi@700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=erode@1&f[]=satoshi@1&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -19,7 +19,7 @@
           <span>Bradley Brazis</span>
         </a>
         <nav>
-          <ul id="navMenu">
+          <ul class="nav-menu" id="navMenu">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./index.html#projects">Projects</a></li>
             <li><a href="./index.html#about">About</a></li>
@@ -46,12 +46,228 @@
         <div class="container home-hero__content">
           <hgroup>
             <h1>Hey, my name is Bradley Brazis</h1>
-            <p>I'm a passionate frontend developer based in Happy Valley, OR. My specialities are <strong>React JS</strong> and <strong>Insert Strength Here</strong>, and I love building apps that are delightful to use.</p>
+            <p>I'm a passionate frontend developer based in Happy Valley, OR. My specialities are <strong>React JS</strong> and <strong>CSS</strong>, and I love building apps that are delightful to use.</p>
           </hgroup>
+          <div class="home-hero__cta">
+            <a href="./#projects" class="btn btn--bg">See my projects</a>
+          </div>
+        </div>
+        <nav class="home-hero__socials">
+          <ul>
+            <li class="home-hero__social">
+              <a href="https://linkedin.com/in/bradleybrazis" class="home-hero__social-icon-link" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+                </svg>
+                <span class="visually-hidden">Bradley Brazis's Linkedin profile</span>
+              </a>
+            </li>
+            <li class="home-hero__social">
+              <a href="https://github.com/bbrazis" class="home-hero__social-icon-link" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="currentColor">
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+                <span class="visually-hidden">Bradley Brazis's Github profile</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="home-hero__mouse-scroll-cont">
+          <div class="mouse"></div>
+        </div>
+      </section>
+      <section id="projects" class="projects sec-pad">
+        <div class="container">
+          <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Projects</span>
+            <span class="heading-sec__sub">
+              All my projects include links to the code and live version. Click the link to learn more about each one.
+            </span>
+          </h2>
+          <template id="project-template">
+            <li class="projects__row">
+              <div class="projects__row-img-cont">
+                <picture>
+                  <source srcset="./assets/img/quiz-thumb.jpg, ./assets/img/quiz-thumb_2x.jpg 2x">
+                  <img
+                    src="./assets/img/quiz-thumb.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                    data-project="image"
+                  />
+                </picture>
+              </div>
+              <div class="projects__row-content" id="projects-wrapper">
+                <h3 class="projects__row-content-title" data-project="title">Project Title</h3>
+                <p class="projects__row-content-desc" data-project="description">
+                  Project description
+                </p>
+                <a
+                  href="./project-1.html"
+                  class="btn btn--med btn--theme dynamicBgClr"
+                  data-project="link">Learn more<span class="visually-hidden"> about <span data-project="title">PROJECT</span></span></a
+                >
+              </div>
+            </li>
+          </template>
+          <ul class="projects__content">
+            <li class="projects__row">
+              <div class="projects__row-img-cont">
+                <picture>
+                  <source srcset="./assets/img/quiz-thumb.jpg, ./assets/img/quiz-thumb_2x 2x" type="" />
+                  <img
+                    src="./assets/img/quiz-thumb.jpg"
+                    alt="Screenshot of quizzical main page"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Quiz App</h3>
+                <p class="projects__row-content-desc">
+                  Quizzical is a simple quiz app that lets you select alternatives and then gives you a score. It's built with functional React components. 
+                </p>
+                <a
+                  href="./project-1.html"
+                  class="btn btn--med btn--theme dynamicBgClr"
+                  >Learn more</a
+                >
+              </div>
+            </li>
+            <li class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/img/dashboard.png"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Personal Dashboard</h3>
+                <p class="projects__row-content-desc">
+                  A Chrome Extension that gives you an overview over the current time, how the weather is like and how Dogecoin is performing. Interacts with multiple APIs using async JS.
+                </p>
+                <a
+                  href="./project-2.html"
+                  class="btn btn--med btn--theme dynamicBgClr"
+                  >Learn more</a
+                >
+              </div>
+            </li>
+            <li class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/img/password.jpg"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Password Generator</h3>
+                <p class="projects__row-content-desc">
+                  An app that generates random passwords based on a few user inputs, 
+                  e.g. length, types of characters, etc. Built with HTML, CSS, and vanilla JavaScript.
+                </p>
+                <a
+                  href="./project-3.html"
+                  class="btn btn--med btn--theme dynamicBgClr"
+                  >Learn more</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="about" class="about sec-pad">
+        <div class="container">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main">About Me</span>
+            <span class="heading-sec__sub">
+              <p>I'm a frontend developer based out of Happy Valley, OR. I love building content that solves real-world problems. My specialities include React JS, CSS, and Styled Components.
+              </p>
+            </span>
+          </h2>
+          <div class="about__content">
+            <div class="about__content-main">
+              <h3 class="about__content-title">Get to know me!</h3>
+              <div class="about__content-details">
+                <p class="about__content-details-para">
+                  My background is in Graphic Design and Web Design. I have a bachelors degree in Motion Graphic Design from Ex'pression College for Digital Arts in Emeryville. When I'm not coding, I spend time with my family and friends.
+                </p>
+              </div>
+              <a href="./#contact" class="btn btn--med dynamicBgClr"
+                >Contact</a
+              >
+            </div>
+            <div class="about__content-skills">
+              <h3 class="about__content-title">My Skills</h3>
+              <ul class="skills">
+                <li class="skills__skill">HTML</li>
+                <li class="skills__skill">CSS</li>
+                <li class="skills__skill">JavaScript</li>
+                <li class="skills__skill">React</li>
+                <li class="skills__skill">Git</li>
+                <li class="skills__skill">Figma</li>
+                <li class="skills__skill">Webflow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact sec-pad dynamicBg">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+            <span class="heading-sec__sub heading-sec__sub--lt">
+              Please reach out if you have any questions! I'm happy to jump on a video call to brainstorm projects and ideas. Send me an email at bradley@bbrazis.com.
+            </span>
+          </h2>
         </div>
       </section>
     </main>
-
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <ul class="main-footer__social-cont">
+              <li>
+                <a target="_blank" rel="noreferrer" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+                  </svg>
+                  <span class="visually-hidden">Bradley Brazis's Linkedin profile</span>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noreferrer" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="currentColor">
+                    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                  </svg>
+                  <span class="visually-hidden">Bradley Brazis's Github profile</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h3 class="heading heading-sm text-lt">Bradley Brazis</h3>
+            <p class="main-footer__short-desc">
+              Frontend Developer based out of Happy Valley OR.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
