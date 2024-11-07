@@ -117,10 +117,11 @@
             <li class="projects__row">
               <div class="projects__row-img-cont">
                 <picture>
-                  <source srcset="./assets/img/quiz-thumb.jpg, ./assets/img/quiz-thumb_2x 2x" type="" />
+                  <source srcset="./assets/img/quiz_thumb.webp, ./assets/img/quiz_thumb_2x.webp 2x" type="image/webp" />
                   <img
-                    src="./assets/img/quiz-thumb.jpg"
-                    alt="Screenshot of quizzical main page"
+                    src="./assets/img/quiz_thumb.jpg"
+                    srcset="./assets/img/quiz_thumb_2x.jpg 2x"
+                    alt="Screenshot of quizzical webapp"
                     class="projects__row-img"
                     loading="lazy"
                   />
@@ -140,17 +141,21 @@
             </li>
             <li class="projects__row">
               <div class="projects__row-img-cont">
-                <img
-                  src="./assets/img/dashboard.png"
-                  alt="Software Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
+                <picture>
+                  <source srcset="./assets/img/colorpicker_thumb.webp, ./assets/img/colorpicker_thumb_2x.webp 2x" type="image/webp" />
+                  <img
+                    src="./assets/img/colorpicker_thumb.jpg"
+                    srcset="./assets/img/colorpicker_thumb_2x.jpg 2x"
+                    alt="Screenshot of the colorpicker webapp"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
               <div class="projects__row-content">
-                <h3 class="projects__row-content-title">Personal Dashboard</h3>
+                <h3 class="projects__row-content-title">Color Palette Generator</h3>
                 <p class="projects__row-content-desc">
-                  A Chrome Extension that gives you an overview over the current time, how the weather is like and how Dogecoin is performing. Interacts with multiple APIs using async JS.
+                  A Webapp that allows you to generate a five color palette for your project in a flash. It is built with vanilla JavaScript and uses an API for generating the palettes.
                 </p>
                 <a
                   href="./project-2.html"
@@ -161,12 +166,16 @@
             </li>
             <li class="projects__row">
               <div class="projects__row-img-cont">
-                <img
-                  src="./assets/img/password.jpg"
-                  alt="Software Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
+                <picture>
+                  <source srcset="./assets/img/bingo_thumb.webp, ./assets/img/bingo_thumb_2x.webp" type="image/webp" />
+                  <img
+                    src="./assets/img/bingo_thumb.jpg"
+                    srcset="./assets/img/bingo_thumb_2x.jpg 2x"
+                    alt="Screenshot of kid bingo webapp"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
               <div class="projects__row-content">
                 <h3 class="projects__row-content-title">Password Generator</h3>
@@ -215,6 +224,7 @@
                 <li class="skills__skill">Git</li>
                 <li class="skills__skill">Figma</li>
                 <li class="skills__skill">Webflow</li>
+                <li class="skills__skill">Xano</li>
               </ul>
             </div>
           </div>
