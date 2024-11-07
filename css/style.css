@@ -88,6 +88,10 @@ body {
   margin: unset;
 }
 
+body.menu-open {
+	overflow: hidden;
+}
+
 a {
 	color: inherit;
 	text-decoration-color: transparent;
@@ -169,6 +173,11 @@ button {
 	background: transparent;
 	border: none;
 	color: var(--color-main);
+}
+
+code {
+	color: var(--color-main);
+	border-bottom: .0625rem solid var(--color-main);
 }
 
 /* Global Classes */
@@ -365,6 +374,16 @@ header {
 			color 200ms ease;
 	}
 	
+	.blurry-close {
+		display: none;
+		position: fixed;
+		z-index: 0;
+		inset: 4rem 0 0;
+		background-color: rgba(from var(--color-bkg) r g b / .75);
+		backdrop-filter: blur(10px);
+		cursor: pointer;
+	}
+	
 	nav a:hover,
 	nav a:focus { 
 		color: white;
@@ -382,6 +401,7 @@ header {
 		.nav-menu--btn {
 			display: block;
 		}
+
 		nav ul {
 			display: none;
 			position: absolute;
@@ -394,6 +414,10 @@ header {
 		}
 		
 		.menu--active { display: flex; }
+
+		.nav-menu.menu--active + .blurry-close {
+			display: block;
+		} 
 		
 		nav li,
 		nav a {
@@ -919,7 +943,7 @@ header {
 
 .project-cs-hero__info {
 	margin: var(--size--3rem) auto 0 auto;
-	max-width: 80rem;
+	max-width: 66ch;
 }
 
 .project-cs-hero__cta {
