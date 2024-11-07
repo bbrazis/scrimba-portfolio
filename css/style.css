@@ -605,6 +605,7 @@ header {
 	grid-template-columns: 1.5fr 1fr;
 	grid-gap: var(--size--5rem);
 	margin-bottom: var(--size--11rem);
+	align-items: center;
 
 	.btn:hover,
 	.btn:focus {
@@ -632,13 +633,29 @@ header {
 }
 
 .projects__row-img-cont {
-	overflow: hidden;
+	position: relative;
+	height: fit-content;
+	border-radius: .25rem;
+	aspect-ratio: 16 / 10;
+}
+
+.projects__row-img-cont::after {
+	content: '';
+	border-radius: inherit;
+	position: absolute;
+	inset: -.25rem;
+	background-color: white;
 }
 
 .projects__row-img {
 	width: 100%;
+	/* height: 100%; */
 	display: block;
+	overflow: hidden;
+	border-radius: .25rem;
 	object-fit: cover;
+	position: relative;
+	z-index: 1;
 }
 
 .projects__row-content {
