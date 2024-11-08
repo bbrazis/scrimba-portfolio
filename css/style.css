@@ -347,6 +347,38 @@ code {
 	letter-spacing: .0625em;
 }
 
+.disco-outline {
+	position: relative;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		inset: -.25rem;
+		border-radius: inherit;
+		z-index: -1;
+		background: conic-gradient(
+			from var(--gradient-angle),
+			var(--green-yellow),
+			var(--light-green),
+			var(--cambridge-blue),
+			var(--ebony),
+			var(--cambridge-blue),
+			var(--light-green),
+			var(--green-yellow)
+		);
+		animation: rotation 20s linear infinite;
+	}
+
+	&[data-outline-size="med"] {
+		&::before,
+		&::after {
+			inset: -.5rem;
+		}
+	}
+}
+
+
 /* Header Styles */
 header {
 	padding: .75rem var(--site--margin);
