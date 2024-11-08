@@ -718,9 +718,9 @@ header {
 .projects__row-img-cont::before,
 .projects__row-img-cont::after {
 	content: '';
-	border-radius: inherit;
+	border-radius: .75rem;
 	position: absolute;
-	inset: -.25rem;
+	inset: -.5rem;
 	background-color: white;
 	background: conic-gradient(
 		from var(--gradient-angle),
