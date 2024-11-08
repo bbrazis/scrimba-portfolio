@@ -16,6 +16,7 @@
   </head>
   <body>
     <header>
+      <a href="#main" class="skip-to-content">Skip to main content</a>
       <div class="container flex--sp-btwn">
         <a href="./index.html" class="nav--avatar-link">
           <img src="/assets/img/avatar.jpg" alt="thumbnail of Bradley Brazis">
@@ -44,72 +45,74 @@
         </nav>
       </div>
     </header>
-    <section class="project-cs-hero">
-      <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Colorpicker Webapp</h1>
-        <div class="project-cs-hero__info">
-          <p class="text-primary">
-            ColorPicker is a vanilla JavaScript webapp that allows someone to create a color palette from a main color using a list of color schemes.
-          </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="https://bbrazis-colorpicker.netlify.app/" class="btn btn--bg" target="_blank">Live Link</a>
-        </div>
-      </div>
-    </section>
-    <section class="project-details">
-      <div class="main-container">
-        <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <picture>
-              <source srcset="./assets/img/colorpicker_hero.webp" type="image/webp" />
-              <img
-                src="./assets/img/colorpicker_hero.png"
-                alt="Project Image"
-                class="project-details__showcase-img"
-              />
-            </picture>
+    <main id="main">
+      <section class="project-cs-hero">
+        <div class="project-cs-hero__content">
+          <h1 class="heading-primary">Colorpicker Webapp</h1>
+          <div class="project-cs-hero__info">
+            <p class="text-primary">
+              ColorPicker is a vanilla JavaScript webapp that allows someone to create a color palette from a main color using a list of color schemes.
+            </p>
           </div>
-          <div class="project-details__content-main">
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-                This fun project is part of Scrimba's Frontend Developers course and is setup to practice using an API within vanilla JavaScript. The API used for this project is <a href="https://thecolorapi.com" target="_blank">TheColorAPI</a>. Using this API, I was able to setup a simple form to get the color data from the color input for the color and the custom select box for the scheme. Upon submission it sends a request to the API and returns five colors matching the color scheme provided.
-              </p>
-              <p class="project-details__desc-para">
-                The initial project was created on Scrimba's platform and was exported into GitHub. The final project is hosted on Netlify.
-              </p>
-            </div>
-            <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
-              <ul class="skills">
-                <li class="skills__skill">HTML</li>
-                <li class="skills__skill">CSS</li>
-                <li class="skills__skill">JavaScript</li>
-                <li class="skills__skill">API</li>
-                <li class="skills__skill">GIT</li>
-                <li class="skills__skill">Netlify</li>
-              </ul>
-            </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="https://bbrazis-colorpicker.netlify.app/"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="https://github.com/bbrazis/colorPicker"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
-            </div>
+          <div class="project-cs-hero__cta">
+            <a href="https://bbrazis-colorpicker.netlify.app/" class="btn btn--bg" target="_blank">Live Link</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="project-details">
+        <div class="main-container">
+          <div class="project-details__content">
+            <div class="project-details__showcase-img-cont">
+              <picture>
+                <source srcset="./assets/img/colorpicker_hero.webp" type="image/webp" />
+                <img
+                  src="./assets/img/colorpicker_hero.png"
+                  alt="Screenshots from the Colorpicker app, showing the UI and UX"
+                  class="project-details__showcase-img"
+                />
+              </picture>
+            </div>
+            <div class="project-details__content-main">
+              <div class="project-details__desc">
+                <h3 class="project-details__content-title">Project Overview</h3>
+                <p class="project-details__desc-para">
+                  This fun project is part of Scrimba's Frontend Developers course and is setup to practice using an API within vanilla JavaScript. The API used for this project is <a href="https://thecolorapi.com" target="_blank">TheColorAPI</a>. Using this API, I was able to setup a simple form to get the color data from the color input for the color and the custom select box for the scheme. Upon submission it sends a request to the API and returns five colors matching the color scheme provided.
+                </p>
+                <p class="project-details__desc-para">
+                  The initial project was created on Scrimba's platform and was exported into GitHub. The final project is hosted on Netlify.
+                </p>
+              </div>
+              <div class="project-details__tools-used">
+                <h3 class="project-details__content-title">Tools Used</h3>
+                <ul class="skills">
+                  <li class="skills__skill">HTML</li>
+                  <li class="skills__skill">CSS</li>
+                  <li class="skills__skill">JavaScript</li>
+                  <li class="skills__skill">API</li>
+                  <li class="skills__skill">GIT</li>
+                  <li class="skills__skill">Netlify</li>
+                </ul>
+              </div>
+              <div class="project-details__links">
+                <h3 class="project-details__content-title">See Live</h3>
+                <a
+                  href="https://bbrazis-colorpicker.netlify.app/"
+                  class="btn btn--med btn--theme project-details__links-btn"
+                  target="_blank"
+                  >Live Link</a
+                >
+                <a
+                  href="https://github.com/bbrazis/colorPicker"
+                  class="btn btn--med btn--theme-inv project-details__links-btn"
+                  target="_blank"
+                  >Code Link</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">

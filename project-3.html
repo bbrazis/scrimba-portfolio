@@ -16,6 +16,7 @@
   </head>
   <body>
     <header>
+      <a href="#main" class="skip-to-content">Skip to main content</a>
       <div class="container flex--sp-btwn">
         <a href="./index.html" class="nav--avatar-link">
           <img src="/assets/img/avatar.jpg" alt="thumbnail of Bradley Brazis">
@@ -44,86 +45,83 @@
         </nav>
       </div>
     </header>
-    <section class="project-cs-hero">
-      <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Kid Bingo</h1>
-        <div class="project-cs-hero__info">
-          <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
-          </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="https://bbrazis-kid-bingo.netlify.app/" class="btn btn--bg" target="_blank">Live Link</a>
-        </div>
-      </div>
-    </section>
-    <section class="project-details">
-      <div class="main-container">
-        <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <picture>
-              <source srcset="./assets/img/bingo_hero.webp" type="image/webp" />
-              <img
-                src="./assets/img/bingo_hero.png"
-                alt="Project Image"
-                class="project-details__showcase-img"
-              />
-            </picture>
+    <main id="main">
+      <section class="project-cs-hero">
+        <div class="project-cs-hero__content">
+          <h1 class="heading-primary">Kid Bingo</h1>
+          <div class="project-cs-hero__info">
+            <p class="text-primary">
+              This side-project was developed as a way to gamify my time watching my kid play with friends. The webapp uses React, BrowserRouter, and Xano.
+            </p>
           </div>
-          <div class="project-details__content-main">
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
-              </p>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
-              </p>
+          <div class="project-cs-hero__cta">
+            <a href="https://bbrazis-kid-bingo.netlify.app/" class="btn btn--bg" target="_blank">Live Link</a>
+          </div>
+        </div>
+      </section>
+      <section class="project-details">
+        <div class="main-container">
+          <div class="project-details__content">
+            <div class="project-details__showcase-img-cont">
+              <picture>
+                <source srcset="./assets/img/bingo_hero.webp" type="image/webp" />
+                <img
+                  src="./assets/img/bingo_hero.png"
+                  alt="Screenshots from the Kid Bingo app, showing the UI and UX"
+                  class="project-details__showcase-img"
+                />
+              </picture>
             </div>
-            <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
-              <ul class="skills">
-                <li class="skills__skill">HTML</li>
-                <li class="skills__skill">CSS</li>
-                <li class="skills__skill">JavaScript</li>
-                <li class="skills__skill">React</li>
-                <li class="skills__skill">GIT</li>
-                <li class="skills__skill">BrowserRouter</li>
-                <li class="skills__skill">API</li>
-                <li class="skills__skill">Xano</li>
-              </ul>
-            </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="https://bbrazis-kid-bingo.netlify.app/"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="https://github.com/bbrazis/bingo"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
+            <div class="project-details__content-main">
+              <div class="project-details__desc">
+                <h3 class="project-details__content-title">Project Overview</h3>
+                <p class="project-details__desc-para">
+                  The reason for this project was to make the dreadfully boring task of watching my kid play with his friends more bareable. After noticing that there were some common and uncommon occurances while playtime happened, I took note of what was happening and decided to make a silly Bingo game.
+                </p>
+                <p class="project-details__desc-para">
+                  I started by creating some React components to handle the basic structure of the bingo board and used some dummy data to mock the squares up. Once the board was built and rendering correctly, I went to Xano to host my own API to handle the bingo terms. Built some API fetch requests and used <code>React.useEffect</code> to take care of the fetch requests. BrowserRouter is used for adding the second page and handling the navigation layout. 
+                </p>
+                <p class="project-details__desc-para">
+                  After the data was coming in from the API, I worked on making the squares clickable and lastly I added win conditions. For the win condition, I had to create an array of winning combinations which were arrays. Every time there are five or more boxes checks, the game runs some code to determine if there is a matching combination. 
+                </p>
+                <p class="project-details__desc-para">
+                  For the victory message, I have an array of somewhat insulting victory messages. Because in order to win this game, you probably lost a little bit of your sanity.
+                  Finally, this project briefly started in Scrimba and then was exported into GitHub where I handled all the updates using GitHub Desktop and VS Code Studio. The final project is hosted on Netlify.
+                </p>
+              </div>
+              <div class="project-details__tools-used">
+                <h3 class="project-details__content-title">Tools Used</h3>
+                <ul class="skills">
+                  <li class="skills__skill">HTML</li>
+                  <li class="skills__skill">CSS</li>
+                  <li class="skills__skill">JavaScript</li>
+                  <li class="skills__skill">React</li>
+                  <li class="skills__skill">GIT</li>
+                  <li class="skills__skill">BrowserRouter</li>
+                  <li class="skills__skill">API</li>
+                  <li class="skills__skill">Xano</li>
+                </ul>
+              </div>
+              <div class="project-details__links">
+                <h3 class="project-details__content-title">See Live</h3>
+                <a
+                  href="https://bbrazis-kid-bingo.netlify.app/"
+                  class="btn btn--med btn--theme project-details__links-btn"
+                  target="_blank"
+                  >Live Link</a
+                >
+                <a
+                  href="https://github.com/bbrazis/bingo"
+                  class="btn btn--med btn--theme-inv project-details__links-btn"
+                  target="_blank"
+                  >Code Link</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">

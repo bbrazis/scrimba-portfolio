@@ -1,3 +1,9 @@
+@property --gradient-angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
 :root {
 	/* Sizes */
 	--site--margin: clamp(1rem, 0.428rem + 2.86vw, 3rem);
@@ -353,6 +359,20 @@ header {
 	
 	.container { align-items: center; }
 	
+	.skip-to-content {
+		padding: .5rem var(--site--margin);
+		display: block;
+		position: absolute;
+		text-align: center;
+		transform: translateY(-150%);
+		overflow: hidden;
+	}
+
+	.skip-to-content:focus {
+		position: relative;
+		transform: translateY(0%);
+	}
+
 	ul {
 		display: flex;
 		column-gap: 1rem;
@@ -663,12 +683,29 @@ header {
 	aspect-ratio: 16 / 10;
 }
 
+.projects__row-img-cont::before,
 .projects__row-img-cont::after {
 	content: '';
 	border-radius: inherit;
 	position: absolute;
 	inset: -.25rem;
 	background-color: white;
+	background: conic-gradient(
+		from var(--gradient-angle),
+		var(--green-yellow),
+		var(--light-green),
+		var(--cambridge-blue),
+		var(--ebony),
+		var(--cambridge-blue),
+		var(--light-green),
+		var(--green-yellow)
+	);
+	animation: rotation 20s linear infinite;
+}
+
+@keyframes rotation {
+	0% { --gradient-angle: 0deg;}
+	100% { --gradient-angle: 360deg;}
 }
 
 .projects__row-img {
@@ -862,7 +899,7 @@ header {
 		margin-right: 1rem;
 
 		svg {
-			width: 2.5rem;
+			width: 1.75rem;
 		}
 	}
 
