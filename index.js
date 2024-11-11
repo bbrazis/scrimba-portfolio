@@ -1,4 +1,3 @@
-// // ---
 const hamMenuBtn = document.querySelector('.nav-menu--btn')
 const navMenu = document.querySelector('#navMenu')
 const headerHamMenuBtn = hamMenuBtn.querySelector('.main-ham-menu')
@@ -36,10 +35,3 @@ for (let link of headerNavMenuLinks) {
 }
 
 headerClose.addEventListener('click', closeMenu)
-
-// // ---
-// const headerLogoConatiner = document.querySelector('.header__logo-container')
-
-// headerLogoConatiner.addEventListener('click', () => {
-//   location.href = 'index.html'
-// })
