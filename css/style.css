@@ -874,7 +874,11 @@ header {
 /* Contact Styles */
 
 .contact {
-	background: linear-gradient(to right, rgba( from var(--color-bkg) r g b / 0.8), rgba(from var(--color-bkg) r g b / 0.8)), url(../../assets/svg/common-bg.svg);
+	background: linear-gradient(
+		to right, 
+		rgba(from var(--color-bkg) r g b / 0.8), 
+		rgba(from var(--color-bkg) r g b / 0.8) ),
+	url(../assets/svg/common-bg.svg);
 	background-size: cover;
 	background-position: center; 
   }
