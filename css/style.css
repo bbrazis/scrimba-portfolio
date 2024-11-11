@@ -878,7 +878,7 @@ header {
 		to right, 
 		rgba(from var(--color-bkg) r g b / 0.8), 
 		rgba(from var(--color-bkg) r g b / 0.8) ),
-	url(../assets/svg/common-bg.svg);
+		url(../assets/svg/common-bg.svg);
 	background-size: cover;
 	background-position: center; 
   }
