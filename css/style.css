@@ -828,11 +828,7 @@ header {
 	.about__content {
 		grid-template-columns: 1fr;
 		grid-gap: var(--size--8rem);
-
-		.heading-sec__main,
-		.heading-sec__sub {
-			text-align: left;
-		}
+		text-align: center;
 	}
 }
 
